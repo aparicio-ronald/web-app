@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment1</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  
+    
+    <%= link_to "COURSE", courses_path %>
+    <%= link_to "SECTION", sections_path %>
+    <%= link_to "PROFESSOR", professors_path %>
+    <%= link_to "STUDENT", students_path %>
+  	<%= link_to "ENROLLMENT", enrollments_path %>
+    <%= yield %>
+  </body>
+</html>
+ 
